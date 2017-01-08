@@ -1,0 +1,82 @@
+.profit {
+  .motopress-posts_slider-obj .motopress-flexslider ul.flex-direction-nav a:before {
+    line-height: 40px;
+    padding-left: 0px;
+  }
+  .motopress-image-slider-obj .flex-direction-nav a {
+    @include text-shadow(none);
+  }
+  .motopress-image-slider-obj.flexslider:hover {
+    .flex-prev,
+    .flex-next {
+      opacity: 1;
+    }
+  }
+  .motopress-image-slider-obj .flex-direction-nav a:before {
+    display: block;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    color: $slideArrow;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: 32px;
+    line-height: 50px;
+    padding-left: 0;
+    @include text-shadow(none);
+  }
+
+  .motopress-image-slider-obj .flex-direction-nav a.flex-next:before {
+    content: "\f105";
+  }
+  .motopress-image-slider-obj .flex-direction-nav a.flex-prev:before {
+    content: "\f104";
+  }
+  .motopress-posts_slider-obj .motopress-flexslider .flex-control-nav li a,
+  .motopress-image-slider-obj .flex-control-paging li a {
+    background: $slidesNav !important;
+    height: 14px !important;
+    opacity: 1;
+    width: 14px !important;
+    border-radius: 100%;
+    @include box-shadow(none);
+    &.flex-active,
+    &:hover {
+      background: $slidesNavActive !important;
+      opacity: 1;
+    }
+  }
+  .motopress-posts_slider-obj .motopress-flexslider .flex-control-nav li a {
+    margin: 0 6px;
+  }
+  .motopress-image-slider-obj .flex-direction-nav a {
+    background: $brandColor !important;
+    width: 56px !important;
+    height: 56px !important;
+    margin-top: -28px !important;
+    &:hover {
+      background: $brandColorHover !important;
+    }
+  }
+  .motopress-image-slider-obj .flex-direction-nav a.flex-next {
+    right: 3px !important;
+  }
+  .motopress-image-slider-obj .flex-direction-nav a.flex-prev {
+    left: 3px !important;
+  }
+  .motopress-image-slider-obj .flex-control-nav {
+    bottom: 24px !important;
+  }
+  .motopress-image-slider-obj.flexslider {
+    margin: 0 0 24px;
+  }
+  .motopress-image-slider-obj.flexslider {
+    padding: 3px;
+    border-radius: 0px;
+    background: #ffffff;
+    @include box-shadow(0 2px 0 $imgShadow, inset 0px 0px 0px 3px #ffffff);
+    border: 1px solid $imgBorder;
+  }
+  .motopress-image-slider-obj .flex-control-nav {
+    z-index: 10 !important;
+  }
+}

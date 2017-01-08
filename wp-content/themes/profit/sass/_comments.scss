@@ -1,0 +1,84 @@
+
+.comment-respond{ 
+    padding: 0px 0 23px;
+    color:$textColor;
+    border: 0px solid;
+    border-bottom: 1px solid;  
+    @include border-image(url("../images/border-dashed.png") 1 round round);
+}
+.comment-body + .comment-respond{
+    margin: 48px 0;
+}
+.comment-list + .comment-respond,
+.comment-list  .comment-respond{   
+    border-top: 1px solid;
+    padding-top: 44px;
+
+}
+.comment-form{ 
+
+    input.form-control{
+        width:470px;
+        max-width: 100%;    
+    }
+    .form-group.comment-form-comment{ 
+        margin-bottom: 30px;
+    }
+    .comment-notes,
+    .logged-in-as{
+        margin: 0 0 45px;
+    }
+    .form-submit,
+    .form-notes{
+        display: inline-block;
+    }
+    .form-submit{
+        margin-right: 54px;
+    }
+}
+
+.comment-content{
+    overflow: hidden;
+}
+.site-main .comment-list{  
+    padding-bottom: 23px;
+    margin: 38px 0 0;
+    color:$commentsColor;
+
+    .comment-body{
+        margin:0 0 24px;
+    }
+    .comment-description{ 
+        padding: 15px 26px 18px;
+        border:1px solid $commentsBoder;
+    }
+    .vcard{
+        margin: 8px 24px 0 0;
+        float: left;
+    }
+    h4.fn{
+        margin: 0 0 10px;
+        color:$brandColor;
+    }
+    .comment-meta {
+        overflow:hidden;
+        span{
+            text-transform: none;        
+        }
+    }
+    .children{ 
+        margin-left: 100px;
+    }
+}
+.comment-navigation{
+    .nav-previous,
+    .nav-next{
+        display:inline-block;
+
+    }
+}
+@media (max-width: 991px){ 
+    .site-main .comment-list .children {
+        margin-left: 24px;
+    }
+}

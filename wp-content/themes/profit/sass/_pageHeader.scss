@@ -1,0 +1,14 @@
+.page-header{
+    border: 0px solid;
+    padding: 30px 0 15px;
+    margin:0;
+    background: $pageHeaderBg;
+    .page-title{
+        display: table-header-group;
+        margin:0;
+        font-size: 28px; 
+        color: #404040;
+        line-height: 1.5;
+    }
+
+}

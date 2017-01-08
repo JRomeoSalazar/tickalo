@@ -1,0 +1,40 @@
+a ,.share-buttons .fa ,.service-hover{
+    @include transition-property(all);
+    @include transition-duration(0.3s);
+    @include transition-timing-function(ease-in-out);
+}
+button, input[type="button"],input[type="submit"]{
+    @include transition-property(background);
+    @include transition-duration(0.3s);
+    @include transition-timing-function(ease-in-out);
+}
+.sf-menu a{    
+    @include transition-property(background, color, border);
+    @include transition-duration(0.3s);
+    @include transition-timing-function(ease-in-out);
+}
+.fixed-small{
+    .wrapper-icons ,
+    .sf-menu > li > a,
+    .header-logo,
+    .site-title ,
+    .site-description{
+        @include transition-property(margin, padding);
+        @include transition-duration(0.3s);
+        @include transition-timing-function(ease);
+    }
+}
+.wrapper-icons ,
+    .sf-menu > li > a,
+    .header-logo,
+    .site-title ,
+    .site-description{
+        @include transition-property(margin, padding);
+        @include transition-duration(0.02s);
+        @include transition-timing-function(ease);
+    } 
+    .team-description{
+         @include transition-property(opacity);
+    @include transition-duration(0.3s);
+    @include transition-timing-function(ease-in-out);
+    }

@@ -1,0 +1,66 @@
+.profit{ 
+    .motopress-tabs-obj li:before{
+        display: none;
+    }
+    .entry-content .motopress-image-slider-obj  ul > li {
+        position: initial; 
+        margin: 0;
+    }
+    .motopress-tabs-obj.ui-tabs.motopress-tabs-basic .ui-tabs-nav li a {
+        padding: 10px 18px 11px !important;
+        color:$textColor!important;  
+        font-size: 16px !important;
+    }
+    .motopress-tabs-obj.ui-tabs.motopress-tabs-no-vertical .ui-tabs-nav li.ui-state-active a{     
+        -moz-box-shadow: 0 1px 0 0 #ffffff, 0 1px 0 0 #ffffff !important; 
+        color:$brandColor!important;             
+    }
+    .motopress-tabs-obj.ui-tabs.motopress-tabs-basic .ui-tabs-nav li{   
+        margin-right:1px!important;
+        background:  transparent!important;        
+        border-top: 1px solid $tabsBorder!important;
+        border-left: 1px solid $tabsBorder!important;
+        border-right: 1px solid $tabsBorder!important;
+    }
+    .motopress-tabs-obj.ui-tabs.motopress-tabs-basic.motopress-tabs-vertical .ui-tabs-nav li{ 
+        margin: 0 0 1px!important;
+        border-bottom: 1px solid $tabsBorder!important;
+        border-right: 0px solid $tabsBorder!important;
+    }
+    .motopress-tabs-obj.ui-tabs.motopress-tabs-vertical .ui-tabs-nav li.ui-state-active a{
+        color:$brandColor!important;       
+        -moz-box-shadow:  1px 0 0 0 #ffffff, 1px 0 0 0 #ffffff !important;
+        -webkit-box-shadow:  1px 0 0 0 #ffffff, 1px 0 0 0 #ffffff !important;
+        box-shadow:  1px 0 0 0 #ffffff, 1px 0 0 0 #ffffff !important;             
+    }
+    .motopress-tabs-obj.ui-tabs.motopress-tabs-basic .ui-tabs-nav {
+        display:block;
+        border: 0px solid #dddddd !important;
+    }
+    .motopress-tabs-obj.ui-tabs.motopress-tabs-no-vertical .ui-tabs-nav {
+        z-index: 2;
+        position: relative;
+    }
+    .motopress-tabs-obj.ui-tabs.motopress-tabs-no-vertical .ui-tabs-nav li {
+        float: left;
+        display: block;
+    }
+    .motopress-tabs-obj.ui-tabs.motopress-tabs-basic .ui-tabs-panel.ui-widget-content {
+        border: 1px solid  $tabsBorder!important;
+    }
+    .motopress-tabs-obj.ui-tabs.motopress-tabs-padding-20 .ui-tabs-panel.ui-widget-content {
+        padding: 30px 22px 18px !important;
+    }
+}
+
+
+@media screen and (max-width: 767px){
+    .profit .motopress-tabs-obj.ui-tabs.motopress-tabs-basic.motopress-tabs-vertical .ui-tabs-nav li {
+        margin: 0 0 0px !important;
+        border-bottom: 0px solid #dadadb !important;
+        border-right: 1px solid #dadadb !important;
+    }
+    .profit .motopress-tabs-obj.ui-tabs.motopress-tabs-vertical .ui-tabs-nav li.ui-state-active a {
+        @include box-shadow(none!important); 
+    }
+}

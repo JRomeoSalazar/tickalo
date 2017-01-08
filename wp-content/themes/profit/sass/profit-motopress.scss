@@ -1,0 +1,33 @@
+@import "compass/css3";
+@import "custom";
+@import "motopress/tabs";
+@import "motopress/accordion";
+@import "motopress/table";
+@import "motopress/button";
+@import "motopress/postGrid";
+@import "motopress/figure";
+@import "motopress/slider";
+@import "motopress/chart";
+@import "motopress/servicebox";
+
+@import "motopress/list";
+@import "motopress/icon";
+@import "motopress/cta";
+@import "motopress/countdownTimer";
+.motopress-cta-obj,
+.motopress-quotes,
+.motopress-social-profile-obj,
+.profit .motopress-tabs-obj.ui-tabs,
+.motopress-table-obj table,
+.motopress-image-ob,
+.motopress-grid-gallery-obj,
+.motopress-google-chart,
+.motopress-image-obj ,
+.motopress-google-map-obj,
+.motopress-video-obj,
+.profit .motopress-social-profile-obj,
+.profit .motopress-share-buttons{
+    margin: 0 0 24px; 
+}
+
+

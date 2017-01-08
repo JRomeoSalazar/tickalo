@@ -1,0 +1,95 @@
+
+.service-content {
+  display: block;
+  position: relative;
+  margin: 0 0 23px;
+  &:hover .service-hover {
+    opacity: 1;
+  }
+  img {
+    display: block;
+  }
+}
+
+.service-hover {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  padding: 25px 20px;
+  color: #ffffff;
+  background: rgba(0, 0, 0, 0.6);
+  opacity: 0;
+  min-height: 100%;
+  max-height: 0;
+  overflow: hidden;
+  z-index: 10;
+  .service-title {
+    color: inherit;
+    margin: 0;
+  }
+
+}
+
+.service-line {
+  margin: 18px 0 27px;
+  width: 70px;
+  border-top: 3px solid rgba(255, 255, 255, 0.5);
+}
+
+.service-empty-thumbnail {
+  background: $brandColor;
+  height: 100%;
+  width: 100%;
+  padding-bottom: 51.895%;
+  position: relative;
+  .date-post {
+    font-weight: 400;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    display: block;
+    text-align: center;
+    width: 100%;
+    color: #ffffff;
+    @include transform(translate(0%, -50%));
+    text-transform: uppercase;
+  }
+}
+
+.services-section {
+  img {
+    margin: 0 auto;
+  }
+  .section-buttons {
+    text-align: center;
+    .button {
+      margin: 24px 0 0 0;
+      min-width: 170px;
+    }
+  }
+  .section-content {
+    padding-bottom: 96px;
+  }
+}
+
+@media (max-width: 991px) {
+  .service-line, .service-entry {
+    display: none;
+  }
+}
+
+@media (max-width: 767px) {
+  .service-content .service-hover {
+   display: none;
+  }
+  .section-dark .section-subcontent, .section-dark .section-buttons {
+    display: block;
+  }
+  .section-dark .section-buttons .button {
+    margin: 40px 0 0 0px;
+  }
+  .section-dark .section-buttons {
+    text-align: left;
+  }
+}

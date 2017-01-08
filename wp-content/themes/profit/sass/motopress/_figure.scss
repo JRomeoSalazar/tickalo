@@ -1,0 +1,6 @@
+.profit  .motopress-image-obj .motopress-image-obj-basic{    
+    padding: 3px!important;
+    background:#ffffff;
+    @include box-shadow( 0 2px 0 $imgShadow);
+    border:1px solid $imgBorder;
+}

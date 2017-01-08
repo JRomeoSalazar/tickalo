@@ -1,0 +1,56 @@
+.contact-section,.calculator-section{
+    input[type='text'],
+    input[type='email'],
+    textarea,
+    .form-control{
+        background:#ffffff;
+        //border:0px solid;
+    }
+
+    .select-wrapper select{    
+        background:#ffffff url(../images/select-bg-front.png)  100% center no-repeat; 
+        //border:0px solid;
+    }
+}
+
+.contact-section{
+    input[type='text'],
+    input[type='email']{
+        height: 57px;
+        padding: 12px 23px 11px;
+    }
+    textarea,
+    .form-control{
+        padding: 17px 23px ;
+    }
+    .form-group{
+        margin-bottom: 40px;
+    }
+    .section-buttons{
+        text-align: center;
+        &,.button{
+            margin:0;
+        }
+    }
+    .section-content{        
+        padding-bottom: 96px;
+    }
+}
+.notification.error{
+    color:$error;
+    font-family: $fontFamily;
+    font-size:13px;
+    text-align: center;
+}
+.notification.success{
+    color:#51af5b;
+    font-family: $fontFamily;
+    font-size:13px;
+    text-align: center;
+}
+
+@media (min-width: 992px){ 
+    .site-main section.contact-section .section-content .button {
+        min-width: 230px;
+    }
+}

@@ -1,0 +1,125 @@
+@import "rate";
+.single-product{
+    .images{        
+        padding-right: 30px;
+        margin-bottom: 39px;
+        width: 50%;
+        float: left;
+        .thumbnails {
+            margin:0 -5px;
+            a{
+                display: block;
+                padding: 0 5px;
+                width:33.33%;
+                float: left;
+            }
+        }
+    } 
+    .entry-title{
+        font-size: 24px;
+        line-height: 1.2;
+    }
+    .woocommerce-review-link{
+        margin-left: 16px;
+        color:#797979;
+        text-decoration: none;
+    }
+    .woocommerce-product-rating,
+    .price,
+    .entry-summary{
+        margin-bottom: 39px;
+    }
+
+    .entry-summary div[itemprop="description"]{
+        padding: 29px 0 18px;
+        margin-bottom: 47px;
+        border: 0px solid;
+        border-bottom: 1px solid;
+        border-top: 1px solid;
+        @include border-image(url("../images/border-dashed.png") 1 round round);
+        overflow: hidden;
+    }
+    .entry-summary .cart{
+        margin-bottom: 50px;
+    }
+    .quantity{
+        display: inline-block;
+        margin-right: 17px;
+    }
+    .product_meta{
+        .sku_wrapper,
+        .tagged_as,
+        .posted_in{
+            display: block;
+        }
+        a{
+            text-decoration: underline;
+        }
+    }
+    ol.commentlist{
+        li{
+            margin: 0 0 20px;
+            list-style: none;
+            padding: 15px 26px 18px;
+            border: 1px solid #dadadb;
+        }
+        .avatar{           
+            margin: 8px 24px 0 0;
+            float: left;
+        }
+        .star-rating {
+            margin: 16px 16px 0 0;
+        }
+        .meta{            
+            padding-top: 16px;
+        }
+        .description{
+            overflow: hidden;
+        }
+    }
+    .comment-respond .select-wrapper{
+        display: none;
+    }
+    .comment-respond{
+        border-bottom: 0 solid;
+        padding: 0;
+		.comment-form {
+			margin-top: 0;
+		}
+    }
+    .related.products,
+    .upsells.products{
+        padding: 68px 0 0;
+        margin:47px 0 0 ;
+        h2{
+            font-size:$fontSizeH3;
+        }
+    }
+}
+.woocommerce.single-product .product>span.onsale {
+    margin-right:  -3px;
+    right: 50%;
+}
+.site-main .quantity .qty{
+    width:102px;
+}
+.woocommerce-tabs,
+.single-product .related.products,
+.single-product .upsells.products{
+    border: 0px solid;
+    border-top: 1px solid;
+    @include border-image(url("../images/border-dashed.png") 1 round round);
+
+}
+.woocommerce-tabs{
+    padding: 47px 0 0;
+    clear:both;
+
+}
+
+@media (max-width: 480px){ 
+    .single_add_to_cart_button{ 
+        display: block;
+        margin-top: 24px;
+    }
+}

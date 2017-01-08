@@ -1,0 +1,24 @@
+.profit{
+    .motopress-posts-grid-obj .motopress-posts-grid-thumbnail > img {
+        margin:0 0 28px 0;
+    }
+    .motopress-posts-grid-title{ 
+        margin: 0;
+    }
+    .motopress-posts-grid-obj .motopress-posts-grid-more a {
+		text-decoration: underline;
+	}
+    .motopress-posts-grid-obj .motopress-posts-grid-meta {
+        font-family: $fontFamily;
+        font-size: 14px;
+        font-weight: 400;
+        text-transform: uppercase;
+        i{
+            font-style: normal;
+        }
+    }
+}
+.motopress-posts-grid-obj .post.post_format-post-format-link, 
+.motopress-posts-grid-obj .post.post_format-post-format-quote {
+    border: 0px solid;
+}

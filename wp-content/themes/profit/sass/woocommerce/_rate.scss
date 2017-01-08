@@ -1,0 +1,96 @@
+.woocommerce {
+    .star-rating {
+        position: relative;
+        font-size: 20px;
+        height: 20px;
+        width: 114px;
+        overflow: hidden;
+        color:#e1e1e1;
+        float: left;
+    }
+    .star-rating span{
+        color:$brandColor;
+    }
+    .star-rating:before,
+        .star-rating span:before{
+        display: inline-block;
+        font: normal normal normal 14px/1 FontAwesome;
+        font-size: 20px;
+        text-rendering: auto;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        transform: translate(0, 0);
+        content: "\f005  \f005  \f005  \f005  \f005";
+        top: 0;
+        left: 0;
+        position: absolute;
+    }
+    .star-rating:before{ 
+
+    }
+    .star-rating span {
+        overflow: hidden;
+        float: left;
+        top: 0;
+        left: 0;
+        position: absolute;
+        padding-top: 20px;
+    }
+}
+.woocommerce p.stars a.star-1 {
+    width: 30px;
+}
+.woocommerce p.stars a.star-2 {
+    width: 50px;
+}
+.woocommerce p.stars a.star-3 {
+    width: 75px;
+}
+.woocommerce p.stars a.star-4 {
+    width: 100px;
+}
+.woocommerce p.stars a.star-5 {
+    width: 125px;
+}
+.woocommerce p.stars a.star-1, .woocommerce p.stars a.star-2, .woocommerce p.stars a.star-3, .woocommerce p.stars a.star-4, .woocommerce p.stars a.star-5 {
+    border-right: 1px solid #ccc;
+}
+.woocommerce p.stars a {
+    display: inline-block;
+    font-weight: 700;
+    margin-right: 10px;
+    text-indent: -9999px;
+    position: relative;
+    border-bottom: 0!important;
+    outline: 0;
+}
+.woocommerce p.stars a.star-1:after, .woocommerce p.stars a.star-2:after, .woocommerce p.stars a.star-3:after, .woocommerce p.stars a.star-4:after, .woocommerce p.stars a.star-5:after {
+    display: inline-block;
+    font: normal normal normal 20px/1 FontAwesome;
+    text-indent: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: #d9e4ef;
+}
+.woocommerce p.stars a.star-1:after {
+    content: "\f005";
+}
+.woocommerce p.stars a.star-2:after {
+    content: "\f005  \f005";
+}
+.woocommerce p.stars a.star-3:after {
+    content: "\f005  \f005  \f005";
+}
+.woocommerce p.stars a.star-4:after {
+    content: "\f005  \f005  \f005  \f005";
+}
+.woocommerce p.stars a.star-5:after {
+    content: "\f005  \f005  \f005  \f005  \f005";
+}
+.woocommerce p.stars a.active:after, .woocommerce p.stars a:hover:after {
+    color: $brandColor;
+}
+.woocommerce .comment-form-rating .chosen-container{
+    display: none;
+}

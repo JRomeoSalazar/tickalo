@@ -1,0 +1,72 @@
+.error404 {
+    .wrapper-404{
+        background: #f5f5f5;
+        overflow: hidden;
+    }
+    .main-container{
+        margin-bottom: 54px;
+    }
+    .post.post_format-post-format-quote{
+        margin-bottom: 0;
+        border:0px solid;
+    }    
+    .site-main{
+        .page-title{
+            margin:0;
+        }
+        #page-404>.entry-content{
+            padding: 0px 0 0px;
+            text-align: center;
+            background: transparent;
+        }
+        .page-title{
+            color:$brandColor;
+            font-size: 198px; 
+            line-height: 0.7;
+            margin: 0 0 53px;
+        }
+        .entry-content h3{ 
+            margin: 0 0 21px;
+        }
+        .search-form{        
+            margin: 40px 0 0;
+            .search-field{ 
+                width: 370px;
+                margin-right: 17px;
+            }
+            .search-submit{
+                min-width: 170px;
+            }
+        }
+        #sidebar{   
+            padding: 0 0 70px;
+            .widget{
+                margin-bottom: 0;
+                h3{
+                    margin-top: 45px;
+                }
+                &:nth-child(3n+1){
+                    clear: both;
+                }
+            }
+        }
+    }
+}
+@media (max-width: 767px){
+    .error404 .site-main{ 
+        .page-title{
+            font-size: 100px;        
+        }
+        .search-form .search-field {
+            width: 100%;
+            margin: 0 0 24px;
+        }
+        .search-form .search-submit {
+            max-width: 100%;
+            margin: 0;
+        }
+    }
+    .error404 .post.post_format-post-format-quote .entry-content {
+        margin: 0;
+    }
+}

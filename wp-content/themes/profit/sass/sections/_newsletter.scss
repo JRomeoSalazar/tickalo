@@ -1,0 +1,118 @@
+.newsletter-section{
+    .default-form{
+        input[type='email']{
+            width: 570px;
+            max-width: 100%;
+            padding: 27px 22px;
+            margin-right: 24px;
+        }
+    }
+    .section-content{
+        padding: 80px 0 55px;
+    }
+    .button{
+        vertical-align: top;
+    }
+    .widget_an_mailchimp{
+        margin: 0 0 24px;
+        input[type="submit"]{
+            margin: 0 auto ;
+        }
+        input[type='text']{
+            width: 570px;
+            padding: 28px 22px;
+            margin: 0 24px 0px 0;
+        }
+        input[type='submit']{
+            vertical-align: top;
+            padding: 13px 30px;
+            font-size: 22px;
+        }
+    }
+    label{
+        color:inherit;
+    }
+}
+
+.widget_an_mailchimp,
+.an_mailchimp_wrapper{
+    label,       
+    input[type="submit"]{
+        display: block;
+    }
+
+    .mailchimp_form_simple{
+        input[type="submit"]{
+            display: initial;
+            vertical-align: top;
+        }
+        label{
+            display: inline-block;
+        }
+    }
+    .mailchimp_form_placeholder{
+        input[type="text"], label{
+            margin-bottom: 0;
+        }
+        input[type="submit"]{
+            margin-top: 24px;
+        }
+        &.mailchimp_form_simple{
+            input[type="submit"]{
+                margin-top: 0;
+            }
+        }
+    }
+}
+.widget_an_mailchimp{
+    .mailchimp_form_simple{
+        input[type=text]{
+            margin:0 24px  0px 0;
+        }
+    }
+
+}
+.an_mailchimp_wrapper{
+    .notification{
+        text-align: left;
+        &.error{
+            margin-bottom: 24px   
+        }
+    }
+}
+.site-main .an_mailchimp_wrapper{
+    input[type="submit"]{
+        padding: 14px 30px;
+    }
+
+}
+ .mailchimp_form_simple p{
+    display: inline-block;
+    vertical-align: bottom;
+}
+.widget_an_mailchimp{
+    .notification.error{
+        margin-bottom: 24px;
+    }
+}
+
+@media (max-width: 991px)and (min-width: 768px){ 
+    .newsletter-section  .widget_an_mailchimp input[type='text'],
+    .newsletter-section .default-form input[type='email'] {
+        width: 370px;
+    }
+}
+@media (max-width: 767px){
+    .mailchimp_form_simple p{
+        display: block;
+    }
+    .widget_an_mailchimp .mailchimp_form_simple label, .an_mailchimp_wrapper .mailchimp_form_simple label{
+        display: block;
+    }
+    .newsletter-section .widget_an_mailchimp input[type='text'],
+    .newsletter-section .default-form input[type='email'] {
+        width: 100%;
+        margin-right: 0;
+		margin-bottom: 20px;
+    }
+}

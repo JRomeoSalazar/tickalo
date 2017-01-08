@@ -1,0 +1,23 @@
+.main-header {
+  .site-header {
+    background: $brandBlue;
+    border-bottom: 1px solid #c9d2d8;
+    .navbar {
+      .sf-menu {
+        li {
+          margin: 0 9px;
+          a {
+            color: $brandWhite;
+            font-size: 15px;
+          }
+        }
+      }
+    }
+  }
+  .wrapper-icons {
+    display: none;
+    a {
+      color: $brandWhite;
+    }
+  }
+}

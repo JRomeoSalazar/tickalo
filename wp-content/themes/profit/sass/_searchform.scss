@@ -1,0 +1,45 @@
+.search-field{
+    margin-bottom: 24px;
+}
+.search-submit{
+    padding: 13px 27px 12px 27px;
+    margin:0;
+    font-size: 18px;
+}
+
+.modal-search-modal{
+    position: absolute;
+    top: 0;
+    left: 15px;
+    right: 15px;
+    height: 100%;
+    background-color: #ffffff;
+    display:none;
+    z-index: 20;
+    .search-submit{
+        display: none;
+    }
+    .search-form{ 
+        position: absolute;
+        top: 50%;
+        margin: -24px 0 0; 
+        right: 26px;
+        left: 0;
+    }
+    &:after{
+        content:'';
+        vertical-align: middle;
+    }
+    .close-search-modal{
+        position: absolute;
+        right: 0;
+        top: 50%;
+        margin-top: -11px;
+        color: inherit;
+    }
+
+}
+.site-header>.container{
+    position: relative;
+
+}

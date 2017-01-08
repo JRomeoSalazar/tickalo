@@ -1,0 +1,59 @@
+.navigation  {      
+    padding: 5px 0 0px 0;
+    overflow:hidden;
+    &.navigation-prev-next{
+        padding: 10px 0 40px 0;
+    }
+    .page-numbers{   
+        display: block;
+        padding: 11px 20px;
+        margin: 0 20px 20px 0;
+        color:$brandColorHover;
+        font-family: $fontFamily;
+        background: #f5f5f5;
+        font-size: 16px;
+        font-weight: 400;
+        float:left;
+        &.dots{
+            padding: 11px 17px;
+            color:$brandColorHover;
+            background: transparent;
+        }
+        &:last-child{
+            margin: 0;
+        }
+    }
+    a.page-numbers:hover,
+        .page-numbers.current{
+        background: $brandColor;
+        color: #ffffff;
+
+    } 
+    a{        
+        text-decoration: none; 
+    }
+}
+.navigation-prev-next a,
+.nav-previous a ,
+.nav-prev a,
+.nav-next a,
+.motopress-posts-grid-load-more a{
+    display: block;
+    padding: 11px 20px;
+    margin: 0 20px 20px 0;
+    color:$brandColorHover;
+    font-family: $fontFamily;
+    background: #f5f5f5;
+    font-size: 18px;
+    font-weight: 400;
+    float:left;
+    text-decoration:none;
+    &:focus{        
+    color:$brandColorHover;
+    }
+    &:hover{
+        background: $brandColor;
+        color: #ffffff;
+        border-color: $brandColor;
+    }
+}

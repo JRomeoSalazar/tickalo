@@ -1,0 +1,45 @@
+.site-title{
+    margin:0;
+    //color:$brandColor;
+    font-size: 25px;
+    line-height: 1;
+    letter-spacing: 0px;
+    text-transform: none;
+	//font-weight: 600;
+}
+.site-tagline{
+    margin: 0;
+    color:$taglineColor;
+    font-size: 13px;
+    text-transform: inherit;
+}
+.home-link{
+    &:hover,
+        &:focus{ 
+        text-decoration: none;
+    }
+}
+.wp-custom-logo .header-logo{    
+    display: inline-block;
+    vertical-align: middle;
+    margin: 17px 7px 17px 0;
+    img{
+        max-width: 250px;
+    }
+}
+.site-description{ 
+    display: inline-block;
+    vertical-align: middle;     
+    padding: 22px 0 15px; 
+}
+.site-header .site-logo{ 
+    float: left;
+}
+
+@media (max-width: 991px){ 
+    .site-header .site-logo{ 
+        float: none;
+        display: table;
+        margin: 0 auto;
+    }
+}

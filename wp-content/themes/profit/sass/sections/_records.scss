@@ -1,0 +1,21 @@
+.record-content{
+    font-size: 14px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+.record-count{
+    font-size: 55px;
+    font-weight: 400;
+}
+.record-box{
+    font-family: $fontFamily;
+    text-align: center;
+}
+.records-section{
+    .section-content{
+        padding: 33px 0 0px;
+    }
+    .widget {
+        margin: 0 0 53px;
+    }
+}

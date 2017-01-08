@@ -1,0 +1,16 @@
+.breadcrumb {
+    display:table-footer-group;
+    margin: 0px;
+    background: transparent;
+    font-size: 14px;
+    border-radius: 0;
+    .breadcrumb-trail{        
+        padding: 5px 0 15px 0;
+    }
+    .fa{
+        color:$breadcrumbSeporatorColor;
+    }
+    .sep{      
+        margin: 0 7px 0;
+    }
+}

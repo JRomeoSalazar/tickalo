@@ -1,0 +1,41 @@
+.testimonial-box{
+    blockquote{
+        padding: 17px 30px 15px 70px;
+        font-size: 14px;
+        font-family: $fontFamily;
+        font-weight: 400;
+        line-height: 2;
+        border:0px solid;
+        margin:0 0 50px;
+        &:after{
+            content:'';
+            position: absolute;
+            width: 0;
+            height: 0;
+            border-style: solid;
+            border-width: 25px 25px 0 0px;
+            border-color: #FFFFFF transparent transparent transparent;
+            line-height: 0px;
+            background: transparent;
+            left: 45px;
+            bottom: -25px;
+            margin: 0;
+        }
+        &:before {
+            left: 24px;
+            top: 13px;
+            font-size:72px;
+            content:'\201C';
+            font-family: inherit;
+        }
+    }
+}
+.testimonial-athor-position{
+    color:$brandColor;
+    font-size: 14px;
+    font-weight: 400;
+}
+.testimonial-athor-name{
+    margin: 0;
+    font-weight: 600;
+}

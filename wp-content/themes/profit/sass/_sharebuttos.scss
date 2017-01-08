@@ -1,0 +1,14 @@
+.social-profile {
+  &.type1 {
+    a {
+      display: inline-block;
+      margin: 0px 0 9px 20px;
+      color: inherit;
+      font-size: 20px;
+      line-height: 1;
+      &:hover {
+        color: #ffffff;
+      }
+    }
+  }
+}

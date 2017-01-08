@@ -1,0 +1,37 @@
+@import "compass/css3";
+@import "custom";
+@import "bbpress/search";
+@import "bbpress/forums";
+@import "bbpress/breadcrumb";
+@import "bbpress/widgets";
+
+div.bbp-topic-tags,
+#bbpress-forums .bbp-forum-info .bbp-forum-content, 
+#bbpress-forums p.bbp-topic-meta,
+#bbpress-forums ul.bbp-lead-topic,
+#bbpress-forums ul.bbp-topics,
+#bbpress-forums ul.bbp-forums, 
+#bbpress-forums ul.bbp-replies,
+#bbpress-forums ul.bbp-search-results,
+#bbpress-forums,
+.bbp-topics-front ul.super-sticky,
+.bbp-topics ul.super-sticky,
+.bbp-topics ul.sticky,
+.bbp-forum-content ul.sticky,
+#bbpress-forums .bbp-forums-list li{
+    font-size:$fontSizeBase;
+}
+
+#bbpress-forums p.bbp-topic-meta img.avatar,
+#bbpress-forums ul.bbp-reply-revision-log img.avatar,
+#bbpress-forums ul.bbp-topic-revision-log img.avatar,
+#bbpress-forums div.bbp-template-notice img.avatar,
+#bbpress-forums .widget_display_topics img.avatar,
+#bbpress-forums .widget_display_replies img.avatar {
+  display: none;
+}
+#bbpress-forums fieldset.bbp-form select{
+    margin: 0px;
+}
+
+

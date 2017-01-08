@@ -1,0 +1,79 @@
+.motopress-table-obj{
+    thead{
+        background: transparent;
+        color:inherit;
+        text-transform:none;
+        font-family:inherit;
+    }
+    thead tr th:first-child,
+        thead tr td:first-child {
+        border-left: 0px solid ;
+    }
+    thead th, 
+    thead td {
+        padding: 0;
+        font-weight: inherit;
+        border: 0px solid #d9dbde;        
+        &:last-child{
+            border: 0px solid #d9dbde;
+        }
+    }
+    tbody{
+        background: transparent;    
+    }
+    tbody td,  tbody th,  tfoot td,  tfoot th {
+        padding: 0;
+        border: 0px solid ;
+    }
+    tbody tr:nth-child(even), 
+        tfoot tr:nth-child(even) {
+        background: transparent;
+    }
+}
+.motopress-table-obj .motopress-table.mp-theme-table-brand {
+    width:100%;
+    vertical-align: middle;
+    thead{
+        background: $brandColor;
+        color:#ffffff;
+        font-family:$fontFamily;
+        text-transform:uppercase;
+
+        th{
+            text-align: center;
+            padding: 13px 38px 12px;
+            border-bottom:1px solid $tableBorder;
+            border-top:1px solid $tableBorder;
+        }
+        tr{
+            th:last-child{
+                border-right:1px solid $tableBorder;
+            }
+        }
+    }
+
+    th{ 
+        font-weight: 600;
+
+    }
+    tbody,
+    tfoot{
+        tr:nth-child(even){
+            background:$tableBgEven;
+        }
+        td{   
+            text-align: center;
+        }
+        td, 
+        th{   
+            text-align: center;
+            padding: 11px 38px;
+            border:1px solid $tableBorder
+        }
+    }
+}
+
+.motopress-table-obj .mp-theme-table-brand.motopress-table-first-col-left td:first-child, 
+.motopress-table-obj .mp-theme-table-brand.motopress-table-first-col-left th:first-child {
+    text-align: left;
+}

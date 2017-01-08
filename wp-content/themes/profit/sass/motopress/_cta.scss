@@ -1,0 +1,22 @@
+.motopress-cta-style-brand {
+    background: $brandColor;
+    color:#ffffff;
+}
+
+.motopress-cta-obj .motopress-cta-content-section.motopress-text-align-left {
+	padding-left: 2em;
+}
+.motopress-cta-obj .motopress-cta.motopress-cta-style-brand .motopress-cta-content-heading, 
+.motopress-cta-obj .motopress-cta.motopress-cta-style-brand .motopress-cta-content-subheading {
+    color: #fff;
+}
+.motopress-cta-obj .motopress-cta.motopress-cta-style-brand .motopress-cta-content-heading {
+	font-size: 24px;
+}
+.wrapper-mce-lite{
+    .motopress-cta-obj .motopress-cta.motopress-cta-style-3d {
+        background-color: $brandColor;
+        color: #ffffff;
+        @include box-shadow(none);
+    }  
+}

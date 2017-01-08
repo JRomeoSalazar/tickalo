@@ -1,0 +1,41 @@
+.widget{
+    &.widget_display_stats{ 
+        dt{
+            float: left;
+            margin: 0 8px 15px 0;
+        }
+        dd{
+            margin: 0 0 15px;
+        }
+    }
+    .bbp-logged-in img.avatar {
+        margin: 0 24px 24px 0;
+        display: block;
+        width: 72px;
+        border: 1px solid #dadadb;
+        padding: 3px;
+        background: #ffffff;
+        overflow: hidden;
+    }
+    .bbp-logged-in h4 {
+        font-size: 20px;
+        margin-bottom: 39px;
+    }
+    .bbp-logged-in .logout-link{        
+        display: inline-block;
+    }
+    .bbp-login-form .bbp-username, .bbp-login-form .bbp-email, .bbp-login-form .bbp-password, .bbp-login-form .bbp-remember-me, .bbp-login-form .bbp-submit-wrapper {
+        margin: 0 0 15px;
+    }
+    #bbp_search{
+        width: 270px;
+        max-width:100%;
+        margin-bottom: 24px;       
+    }
+    #bbp-search-form{
+        padding-top:5px;        
+    }
+}
+#sidebar .bbp-login-form label {
+    width: auto;
+}

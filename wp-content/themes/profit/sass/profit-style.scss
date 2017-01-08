@@ -1,0 +1,92 @@
+@import "compass/css3";
+@import "custom";
+@import "wordpress";
+@import "typography";
+@import "header";
+@import "pageHeader";
+@import "wpcf7";
+@import "transition";
+@import "sharebuttos";
+@import "header";
+@import "breadcrumbs";
+@import "searchform";
+@import "widgets";
+@import "navigation";
+@import "post";
+@import "blog";
+@import "404";
+@import "footer";
+@import "tabs";
+@import "gallery";
+@import "sections/sections";
+@import "sections/features";
+@import "sections/records";
+@import "sections/services";
+@import "sections/team";
+@import "sections/news";
+@import "sections/plan";
+@import "sections/newsletter";
+@import "sections/service";
+@import "sections/testimonials";
+@import "sections/contact";
+@import "sections/map";
+@import "sections/slider";
+@import "sections/stockticker";
+
+.main-container{
+    margin-top: 70px;
+    margin-bottom: 70px;
+    &.home-main-container{
+        margin-top: 0px;
+        margin-bottom: 0px;
+        .entry-content{
+            margin-bottom:0;
+        }
+    }
+    &.landing-page-container{
+        margin-top: 0px;
+        margin-bottom: 0px;        
+    }
+}
+
+.calculator-section{
+    position: relative; 
+    &.default-section .section-content {
+        margin-bottom: 48px;
+    }
+    .section-title, .section-subtitle{
+        text-align: left;
+    }
+    .section-subtitle{
+        margin-bottom: 35px;
+    }
+    label{
+        font-weight: 400;
+        color:inherit;
+        text-transform: none;
+
+    }
+    .form-group{
+        margin-bottom: 30px;
+    }
+    .notification{
+        text-align: left;
+    }
+    table  h5{
+        margin: 0;
+        display: inline-block;
+    }
+    table{
+        background: #ffffff;
+    }
+}
+@media (max-width: 767px){
+    .calculator-section{
+        min-height:0;
+        .select-wrapper{
+            margin-top: 30px;
+        }
+    }
+}
+
+

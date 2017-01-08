@@ -1,0 +1,16 @@
+span.wpcf7-not-valid-tip{
+    position: absolute;
+    bottom: -29px;
+    color:$error;
+    font-size: 13px;
+}
+span.wpcf7-form-control-wrap {
+    display: block;
+    position: relative;
+}
+.wpcf7-form{
+    h2{
+      text-transform: uppercase;
+      color:$brandColor;
+    }
+}

@@ -1,0 +1,61 @@
+.thumb-related{ 
+    margin:5px 0 24px; 
+    a{
+        width: 100%;  
+        display: table-cell;
+        vertical-align: middle;
+    }
+    img{         
+        max-height: 180px;
+        width: auto;
+    }
+    .thumb{              
+        height: 188px;
+        vertical-align: middle;
+        text-align: center;
+        display:table;
+        width:100%;
+        &.thumb-default a{
+            background: $brandColor;  
+        }  
+        a{
+            color:#ffffff;
+            text-decoration: none;
+        }
+    }
+}
+.posts-related{
+    margin: 0 0 16px;
+}
+
+@media (max-width: 1229px)and(min-width: 992px){ 
+    .thumb-related .thumb{
+        max-height: 149px;
+    }
+    .thumb-related img {
+        max-height: 141px;
+    }
+}
+@media (max-width: 991px)and (min-width: 768px){ 
+    .thumb-related .thumb{
+        max-height: 111px;
+    }
+    .thumb-related img {
+        max-height: 103px;
+    }
+}
+@media (max-width: 767px){
+    .meta-box-related{
+        margin-bottom: 40px;
+    }
+    .thumb-related {
+        width: 370px;
+        max-width: 100%;
+    }
+    .thumb-related .thumb{
+        height: auto;
+        &.thumb-default{
+            height: 188px;
+        }
+    }
+}

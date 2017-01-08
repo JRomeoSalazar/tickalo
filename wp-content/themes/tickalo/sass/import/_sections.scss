@@ -1,0 +1,34 @@
+.consumibles-section {
+  background:
+          /* top, transparent red, faked with gradient */
+          linear-gradient(
+                          rgba(0, 0, 0, 0.15),
+                          rgba(0, 0, 0, 0.15)
+          ),
+            /* bottom, image */
+          url('../images/consumibles.png') 80px 20px repeat;
+  @include background-size(cover);
+  color: #ffffff;
+  .section-subcontent {
+    font-weight: 700;
+    .section-title {
+      color: #161616;
+    }
+    .section-subtitle {
+
+    }
+    .section-description {
+      color: #252525;
+    }
+  }
+}
+
+.software-section, .seguridad-section {
+  background: #efefef;
+}
+
+.accesorios-section {
+  .section-right {
+    left: 35%;
+  }
+}

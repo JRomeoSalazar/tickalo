@@ -1,0 +1,16 @@
+
+.meta .tag ,.widget .tagcloud{ 
+    a{
+        text-transform: initial;
+        background: $brandColorThecond;
+        display: inline-block;        
+        padding: 0 8px 2px;
+        font-size: 14px;
+    }
+}
+.meta .tag  a{
+    margin: 0px 6px 6px 0;
+}
+.widget .tagcloud a{ 
+    margin: 0px 4px 6px 0;
+}
