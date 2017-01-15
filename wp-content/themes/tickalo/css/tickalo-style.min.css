@@ -1,3 +1,12 @@
+/* line 1, ../sass/import/_common.scss */
+.profit .motopress-image-obj .motopress-image-obj-basic {
+  background: transparent !important;
+  -webkit-box-shadow: none !important;
+  -moz-box-shadow: none !important;
+  box-shadow: none !important;
+  border: 0 !important;
+}
+
 /* line 2, ../sass/import/_header.scss */
 .main-header .site-header {
   background: #0180C5;
