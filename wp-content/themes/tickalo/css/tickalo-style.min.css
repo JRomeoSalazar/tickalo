@@ -7,6 +7,17 @@
   border: 0 !important;
 }
 
+/* line 10, ../sass/import/_common.scss */
+.motopress-quotes p {
+  font-size: 24px;
+  font-style: italic;
+}
+
+/* line 17, ../sass/import/_common.scss */
+.tickalo-bold {
+  font-weight: 700;
+}
+
 /* line 2, ../sass/import/_header.scss */
 .main-header .site-header {
   background: #0180C5;

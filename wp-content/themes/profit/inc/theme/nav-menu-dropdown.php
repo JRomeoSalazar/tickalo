@@ -36,7 +36,14 @@ class MP_Profit_Walker_Nav_Menu_Dropdown extends Walker_Nav_Menu {
         if ($item->current):
             $output.=' selected ';
         endif;
-        $output.='>' . $item->title;
+        if ($depth===0):
+	        $output.='class="tickalo-bold"';
+        endif;
+        $output.='>';
+	    if ($depth) {
+		    $output .= str_repeat("&nbsp;", $depth * 5);
+	    }
+	    $output .= $item->title;
     }
 
     function end_el(&$output, $item, $depth = 0, $args = array()) {
