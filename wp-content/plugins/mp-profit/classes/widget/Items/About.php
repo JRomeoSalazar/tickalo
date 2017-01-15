@@ -38,9 +38,9 @@ class MP_Profit_Plugin_Widget_About extends MP_Profit_Plugin_Widget_Default {
 						}
 					?>
 				</div>
-				<div class="site-description">
-					<h1 class="site-title <?php if ( ! get_bloginfo( 'description' ) ) : ?>empty-tagline<?php endif; ?>"><?php bloginfo( 'name' ); ?></h1>
-				</div>
+				<!--<div class="site-description">
+					<h1 class="site-title <?php //if ( ! get_bloginfo( 'description' ) ) : ?>empty-tagline<?php //endif; ?>"><?php //bloginfo( 'name' ); ?></h1>
+				</div>-->
 			</div>
 		<?php endif; ?>
 		<div class="site-about"><?php echo wp_kses_data( $text ); ?></div>
