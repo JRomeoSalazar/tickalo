@@ -18,6 +18,7 @@ function tickalo_enqueue_styles() {
 		wp_get_theme()->get( 'Version' )
 	);
 	wp_enqueue_style( 'tickalo-style-main', get_stylesheet_directory_uri() . '/css/tickalo-style.min.css', array( 'mp-profit-main' ), mp_profit_get_theme_version(), 'all' );
+	wp_enqueue_script( 'mp-tickalo-script', get_stylesheet_directory_uri() . '/js/tickalo.min.js', array( 'jquery' ), mp_profit_get_theme_version(), true );
 }
 
 add_action( 'wp_enqueue_scripts', 'tickalo_enqueue_styles' );
