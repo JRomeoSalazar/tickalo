@@ -55,7 +55,7 @@ function tickalo_punto_de_venta_get_html() {
 				<h2 class="section-title">Puntos de Venta</h2>
 
 				<!-- Subtitle -->
-				<div class="section-subtitle">Un subtítulo glorioso</div>
+				<div class="section-subtitle">Soluciones Profesionales para todo tipo de Negocio</div>
 
 				<!-- Puntos de Venta list -->
 				<?php
@@ -248,7 +248,7 @@ function tickalo_seguridad_get_html() {
 				<h2 class="section-title">Seguridad</h2>
 
 				<!-- Subtitle -->
-				<div class="section-subtitle">Un subtítulo glorioso</div>
+				<div class="section-subtitle">Videovigilancia y controles de presencia</div>
 
 				<!-- Seguridad list -->
 				<?php
