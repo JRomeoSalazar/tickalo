@@ -12,13 +12,13 @@
   .section-subcontent {
     font-weight: 700;
     .section-title {
-      color: #161616;
+      color: $darker;
     }
     .section-subtitle {
 
     }
     .section-description {
-      color: #252525;
+      color: $dark;
     }
   }
 }
@@ -28,6 +28,13 @@
 }
 
 .accesorios-section {
+  .section-content {
+    .section-description {
+      color: $dark;
+      font-weight: 700;
+      max-width: 350px;
+    }
+  }
   .section-right {
     left: 35%;
   }

@@ -68,7 +68,13 @@
   background: #efefef;
 }
 
-/* line 31, ../sass/import/_sections.scss */
+/* line 32, ../sass/import/_sections.scss */
+.accesorios-section .section-content .section-description {
+  color: #252525;
+  font-weight: 700;
+  max-width: 350px;
+}
+/* line 38, ../sass/import/_sections.scss */
 .accesorios-section .section-right {
   left: 35%;
 }
