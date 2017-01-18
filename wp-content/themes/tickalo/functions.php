@@ -61,7 +61,7 @@ function tickalo_punto_de_venta_get_html() {
 				<?php
 				$args   = array(
 					'post_type'      => 'puntos-de-venta',
-					'posts_per_page' => 3
+					'posts_per_page' => 6
 				);
 				$prizes = new WP_Query( $args );
 				if ( $prizes->have_posts() ) {
