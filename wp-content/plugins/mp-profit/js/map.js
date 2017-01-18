@@ -133,10 +133,10 @@ function initializeShops() {
             scrollwheel: false,
             draggable: true,
             minZoom: 3,
-            maxZoom: 21,
+            maxZoom: 21/*,
             mapTypeControlOptions: {
                 mapTypeIds: [google.maps.MapTypeId.ROADMAP, 'usroadatlas']
-            }
+            }*/
         };
     } else {
         mapOptions = {
@@ -146,21 +146,21 @@ function initializeShops() {
             scrollwheel: false,
             draggable: false,
             minZoom: 3,
-            maxZoom: 21,
+            maxZoom: 21/*,
             mapTypeControlOptions: {
                 mapTypeIds: [google.maps.MapTypeId.ROADMAP, 'usroadatlas']
-            }
+            }*/
         };
     }
     map = new google.maps.Map(document.getElementById('map'),
             mapOptions);
-    var styledMapOptions = {
+    /*var styledMapOptions = {
         name: 'US Road Atlas'
     };
     var usRoadMapType = new google.maps.StyledMapType(
             roadAtlasStyles, styledMapOptions);
     map.mapTypes.set('usroadatlas', usRoadMapType);
-    map.setMapTypeId('usroadatlas');
+    map.setMapTypeId('usroadatlas');*/
     var marker;
     var image = {
         size: new google.maps.Size(42, 63),
