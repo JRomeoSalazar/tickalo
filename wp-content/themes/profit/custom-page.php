@@ -53,7 +53,7 @@ endif;
  * Secciones Tíckalo
  */
 $mp_profit_sections["punto_de_venta.php"] = 20;
-$mp_profit_sections["sector.php"] = 40;
+//$mp_profit_sections["sector.php"] = 40;
 $mp_profit_sections["seguridad.php"] = 50;
 
 asort( $mp_profit_sections );
