@@ -32,13 +32,9 @@
   color: #ffffff;
   font-size: 15px;
 }
-/* line 17, ../sass/import/_header.scss */
-.main-header .wrapper-icons {
+/* line 18, ../sass/import/_header.scss */
+.main-header .wrapper-icons a.search-icon {
   display: none;
-}
-/* line 19, ../sass/import/_header.scss */
-.main-header .wrapper-icons a {
-  color: #ffffff;
 }
 
 /* line 4, ../sass/import/_sections.scss */

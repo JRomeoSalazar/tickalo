@@ -17,17 +17,13 @@
 	<?php wp_head(); ?>
 </head>
 <body <?php body_class( 'profit' ); ?> >
-<div
-	class="wrapper <?php if ( is_plugin_active( 'motopress-content-editor-lite/motopress-content-editor.php' ) ): echo 'wrapper-mce-lite';endif; ?>">
+<div class="wrapper <?php if ( is_plugin_active( 'motopress-content-editor-lite/motopress-content-editor.php' ) ): echo 'wrapper-mce-lite';endif; ?>">
 	<?php if ( get_page_template_slug() != 'template-landing-page.php' || is_search() ):
-		
 		$mp_profit_show_sticky_menu = get_theme_mod( 'mp_profit_show_sticky_menu', true ) === true || get_theme_mod( 'mp_profit_show_sticky_menu', true ) === 1;
 		if (isset($_GET['motopress-ce']) && $_GET['motopress-ce'] === '1')
 			$mp_profit_show_sticky_menu = false;
 		?>
-		<header id="header"
-		        class="main-header <?php if ($mp_profit_show_sticky_menu) : ?>fixed<?php endif; ?>"
-		        data-sticky-menu="<?php if ($mp_profit_show_sticky_menu) : ?>on<?php else: echo 'off'; endif; ?>">
+		<header id="header" class="main-header <?php if ($mp_profit_show_sticky_menu) : ?>fixed<?php endif; ?>" data-sticky-menu="<?php if ($mp_profit_show_sticky_menu) : ?>on<?php else: echo 'off'; endif; ?>">
 			<?php
 			$menuClass = '';
 			if ( is_front_page() ) :
@@ -52,12 +48,8 @@
 						</div>
 					</div>
 					<div class="wrapper-icons site-header-cart">
-						<?php
-						mp_profit_get_cart();
-						?>
-
+						<?php //mp_profit_get_cart(); ?>
 						<a href="#" class="search-icon"><i class="fa fa-search"></i></a>
-
 					</div>
 					<div id="navbar" class="navbar">
 						<nav id="site-navigation" class="main-navigation">
