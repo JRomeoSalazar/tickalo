@@ -79,6 +79,13 @@ class MP_Profit_Plugin_Contact {
             else:
                 $message = stripslashes(trim($_POST['mymessage']));
             endif;
+	        /*
+			 * privacy policy
+			 */
+	        if ($_POST['privacy-policy'] != "on"):
+		        $privacyError = "Debe aceptar la el Aviso Legal y la Política de Privacidad";
+		        $hasError = true;
+	        endif;
             /*
              * send the email
              */
@@ -157,6 +164,9 @@ class MP_Profit_Plugin_Contact {
                         if (isset($messageError) && $messageError != '') :
                             echo '<div class="notification error"><p>' . esc_html($messageError) . '</p></div>';
                         endif;
+                        if (isset($privacyError) && $privacyError != '') :
+	                        echo '<div class="notification error"><p>' . esc_html($privacyError) . '</p></div>';
+                        endif;
                         ?>
 
                         <form  method="POST" action="" onSubmit="this.scrollPosition.value = (document.body.scrollTop || document.documentElement.scrollTop)" class="contact-form">
@@ -194,7 +204,13 @@ class MP_Profit_Plugin_Contact {
                                         }
                                         ?></textarea>
                                 </div>
-
+                                <div class="form-group col-xs-12 col-sm-6 col-md-6 col-lg-5">
+                                    <div class="checkbox">
+                                        <label>
+                                            <input type="checkbox" name="privacy-policy" <?php echo $_POST['privacy-policy'] == "on" ? "checked" : "" ?>> Acepto el <a href="<?php echo get_site_url(null, 'aviso-legal-politica-privacidad') ?>" title="Aviso Legal y Política de privacidad" target="_blank">Aviso Legal y Política de privacidad</a>
+                                        </label>
+                                    </div>
+                                </div>
                             </div>
                             <?php
                             $mp_profit_contactus_button_label = esc_html(get_theme_mod('mp_profit_contactus_button_label', __('Send Message', 'mp-profit')));
