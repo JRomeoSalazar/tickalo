@@ -168,6 +168,9 @@ class MP_Profit_Plugin_Contact {
                                         <input required="required" type="text" name="myname" placeholder="<?php _e('Your Name', 'mp-profit'); ?>" class="form-control input-box" value="<?php if (isset($_POST['myname'])) echo esc_attr($_POST['myname']); ?>">
                                     </div>
                                     <div class="form-group">
+                                        <input type="text" name="myphone" placeholder="Teléfono" class="form-control input-box" value="<?php if (isset($_POST['myphone'])) echo esc_attr($_POST['myphone']); ?>">
+                                    </div>
+                                    <div class="form-group">
                                         <input required="required" type="email" name="myemail" placeholder="<?php _e('Your Email', 'mp-profit'); ?>" class="form-control input-box" value="<?php if (isset($_POST['myemail'])) echo is_email($_POST['myemail']) ? $_POST['myemail'] : ""; ?>">
                                     </div>
                                     <div class="form-group">
