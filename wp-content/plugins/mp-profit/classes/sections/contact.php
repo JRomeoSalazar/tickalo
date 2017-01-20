@@ -31,12 +31,14 @@ class MP_Profit_Plugin_Contact {
                 }
                 if (!$captcha) {
                     $hasError = true;
+                    $captchaError = "Debe completar correctamente el captcha";
                 }
                 $response = wp_remote_get("https://www.google.com/recaptcha/api/siteverify?secret=" . $mp_profit_contactus_secretkey . "&response=" . $captcha . "&remoteip=" . $_SERVER['REMOTE_ADDR']);
                 $responseObj = json_decode($response['body']);
                 if (!is_null($responseObj)) {
                     if ($responseObj->success === false) {
                         $hasError = true;
+	                    $captchaError = "Debe completar correctamente el captcha";
                     }
                 }
             endif;
@@ -83,7 +85,7 @@ class MP_Profit_Plugin_Contact {
 			 * privacy policy
 			 */
 	        if ($_POST['privacy-policy'] != "on"):
-		        $privacyError = "Debe aceptar la el Aviso Legal y la Política de Privacidad";
+		        $privacyError = "Debe aceptar el Aviso Legal y la Política de Privacidad";
 		        $hasError = true;
 	        endif;
             /*
@@ -166,6 +168,9 @@ class MP_Profit_Plugin_Contact {
                         endif;
                         if (isset($privacyError) && $privacyError != '') :
 	                        echo '<div class="notification error"><p>' . esc_html($privacyError) . '</p></div>';
+                        endif;
+                        if (isset($privacyError) && $privacyError != '') :
+	                        echo '<div class="notification error"><p>' . esc_html($captchaError) . '</p></div>';
                         endif;
                         ?>
 
