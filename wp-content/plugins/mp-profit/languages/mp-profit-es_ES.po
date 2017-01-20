@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "POT-Creation-Date: 2016-12-08 21:40+0100\n"
-"PO-Revision-Date: 2017-01-18 20:44+0100\n"
+"PO-Revision-Date: 2017-01-20 13:01+0100\n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -495,7 +495,7 @@ msgstr ""
 
 #: classes/sections/contact.php:144
 msgid "Thanks, your email was sent successfully!"
-msgstr ""
+msgstr "Gracias, tu mensaje fue enviado correctamente!"
 
 #: classes/sections/contact.php:146
 msgid "Sorry, an error occured."
