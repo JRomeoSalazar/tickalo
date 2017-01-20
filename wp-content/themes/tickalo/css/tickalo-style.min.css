@@ -33,6 +33,10 @@
   font-size: 15px;
 }
 /* line 18, ../sass/import/_header.scss */
+.main-header .wrapper-icons span.contact-phone {
+  color: #ffffff;
+}
+/* line 21, ../sass/import/_header.scss */
 .main-header .wrapper-icons a.search-icon {
   display: none;
 }
