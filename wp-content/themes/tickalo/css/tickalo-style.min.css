@@ -35,8 +35,9 @@
 /* line 18, ../sass/import/_header.scss */
 .main-header .wrapper-icons a {
   color: #ffffff;
+  font-size: 20px;
 }
-/* line 21, ../sass/import/_header.scss */
+/* line 22, ../sass/import/_header.scss */
 .main-header .wrapper-icons a.search-icon {
   display: none;
 }
