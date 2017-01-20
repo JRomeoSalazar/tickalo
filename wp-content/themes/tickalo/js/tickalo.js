@@ -3,15 +3,16 @@
  */
 
 jQuery(document).ready(function ($) {
-  var addTo        = 0,
-      headerHeight = 0,
+  var headerHeight = 0,
       $mainHeader  = $('.main-header'),
-      $mainMenu    = $('#main-menu');
+      $siteHeader  = $('.site-header'),
+      $mainMenu    = $('#main-menu'),
+      $mainSlider = $('#main-slider');
   if ($mainHeader.attr('data-sticky-menu') === 'on' && $(window).width() > 767) {
     if ($mainHeader.hasClass('fixed-small')) {
-      addTo = $('#site-header').outerHeight();
+      headerHeight = $siteHeader.outerHeight();
     } else {
-      addTo = $mainHeader.outerHeight();
+      headerHeight = $mainHeader.outerHeight();
     }
   }
   var hash = location.hash;
@@ -19,10 +20,9 @@ jQuery(document).ready(function ($) {
     var idName = hash.substring(1);
     var target = $(hash);
     target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
-    console.debug(target.offset().top - headerHeight - addTo);
     if (target.length) {
       $('html, body').animate(
-        {scrollTop: target.offset().top - headerHeight - addTo - 560},
+        {scrollTop: target.offset().top - headerHeight - $mainSlider.outerHeight() + $mainSlider.find('.slides li').outerHeight()},
         {
           duration:1000,
           complete:function(){
