@@ -49,7 +49,7 @@
 					</div>
 					<div class="wrapper-icons site-header-cart">
 						<?php //mp_profit_get_cart(); ?>
-                        <span class="contact-phone"><i class="fa fa-phone"></i> 876 641 291</span>
+                        <a href="tel:876641291" class="contact-phone"><i class="fa fa-phone"></i> 876 641 291</a>
 						<a href="#" class="search-icon"><i class="fa fa-search"></i></a>
 					</div>
 					<div id="navbar" class="navbar">

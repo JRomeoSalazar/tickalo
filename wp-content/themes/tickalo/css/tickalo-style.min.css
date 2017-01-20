@@ -33,7 +33,7 @@
   font-size: 15px;
 }
 /* line 18, ../sass/import/_header.scss */
-.main-header .wrapper-icons span.contact-phone {
+.main-header .wrapper-icons a {
   color: #ffffff;
 }
 /* line 21, ../sass/import/_header.scss */
