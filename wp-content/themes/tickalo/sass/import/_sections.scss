@@ -1,11 +1,14 @@
 .main-slider-section {
   ul.slides {
     li {
-      .slide-title {
-        color: $brandBlue;
-      }
-      .slide-content {
-        color: lighten($brandBlue, 10%);
+      .slide-wrapper {
+        background-color: $brandWhite;
+        .slide-title {
+          color: $brandBlue;
+        }
+        .slide-content {
+          color: lighten($brandBlue, 10%);
+        }
       }
     }
   }
@@ -37,7 +40,7 @@
 }
 
 .software-section, .seguridad-section {
-  background: #efefef;
+  background: $brandWhite;
 }
 
 .accesorios-section {

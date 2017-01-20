@@ -42,15 +42,19 @@
 }
 
 /* line 4, ../sass/import/_sections.scss */
-.main-slider-section ul.slides li .slide-title {
+.main-slider-section ul.slides li .slide-wrapper {
+  background-color: #ffffff;
+}
+/* line 6, ../sass/import/_sections.scss */
+.main-slider-section ul.slides li .slide-wrapper .slide-title {
   color: #0180C5;
 }
-/* line 7, ../sass/import/_sections.scss */
-.main-slider-section ul.slides li .slide-content {
+/* line 9, ../sass/import/_sections.scss */
+.main-slider-section ul.slides li .slide-wrapper .slide-content {
   color: #01a1f8;
 }
 
-/* line 14, ../sass/import/_sections.scss */
+/* line 17, ../sass/import/_sections.scss */
 .consumibles-section {
   background: linear-gradient(rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.15)), url("../images/consumibles.png") 80px 20px repeat;
   -moz-background-size: cover;
@@ -59,31 +63,31 @@
   background-size: cover;
   color: #ffffff;
 }
-/* line 25, ../sass/import/_sections.scss */
+/* line 28, ../sass/import/_sections.scss */
 .consumibles-section .section-subcontent {
   font-weight: 700;
 }
-/* line 27, ../sass/import/_sections.scss */
+/* line 30, ../sass/import/_sections.scss */
 .consumibles-section .section-subcontent .section-title {
   color: #161616;
 }
-/* line 33, ../sass/import/_sections.scss */
+/* line 36, ../sass/import/_sections.scss */
 .consumibles-section .section-subcontent .section-description {
   color: #252525;
 }
 
-/* line 39, ../sass/import/_sections.scss */
+/* line 42, ../sass/import/_sections.scss */
 .software-section, .seguridad-section {
-  background: #efefef;
+  background: #ffffff;
 }
 
-/* line 45, ../sass/import/_sections.scss */
+/* line 48, ../sass/import/_sections.scss */
 .accesorios-section .section-content .section-description {
   color: #252525;
   font-weight: 700;
   max-width: 350px;
 }
-/* line 51, ../sass/import/_sections.scss */
+/* line 54, ../sass/import/_sections.scss */
 .accesorios-section .section-right {
   left: 35%;
 }
