@@ -44,13 +44,13 @@ class MP_Profit_Plugin_Widget_Contact extends MP_Profit_Plugin_Widget_Default {
 			
 			<?php if ( !empty( $email ) ) : ?>
             <li class="contact-email">
-                <i class="fa fa-envelope-o"></i><div class="contact-content"><a href="mailto:<?php echo esc_url( $email ); ?>"><?php echo esc_html( $email ); ?></a> </div>
+                <i class="fa fa-envelope-o"></i><div class="contact-content"><a href="mailto:<?php echo str_replace("http://", "", esc_url( $email )); ?>"><?php echo esc_html( $email ); ?></a> </div>
             </li>
 			<?php endif ?>
 			
 			<?php if ( !empty( $skype ) ) : ?>
             <li class="contact-skype">
-                <i class="fa fa-skype"></i><div class="contact-content"><a href="skype:<?php echo esc_url( $skype ); ?>"><?php echo esc_html( $skype ); ?></a></div>
+                <i class="fa fa-skype"></i><div class="contact-content"><a href="skype:<?php echo str_replace("http://", "", esc_url( $skype )); ?>"><?php echo esc_html( $skype ); ?></a></div>
             </li>
 			<?php endif ?>
         </ul>
