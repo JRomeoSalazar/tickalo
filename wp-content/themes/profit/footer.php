@@ -65,36 +65,10 @@
 								class="fa fa-rss"></i></a>
 					<?php endif; ?>
 				</div>
-				<p class="copyright"><span
-						class="copyright-date"><?php _e( '&copy; Copyright', 
-							'profit'  ); ?><?php
-						$dateObj = new DateTime;
-						$year    = $dateObj->format( "Y" );
-						echo $year;
-						?>
-                    </span>
-
-					<?php
-					
-					if ( get_theme_mod( 'mp_profit_copyright', false ) === false ) :
-						?>
-						<a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php bloginfo( 'name' ); ?>"
-						   target="_blank"><?php bloginfo( 'name' ); ?></a>
-						<?php printf( __( '&#8226; Designed by', 'profit' ) ); ?> <a
-						href="<?php echo esc_url( __( 'http://www.getmotopress.com/', 'profit' ) ); ?>" rel="nofollow"
-						title="<?php esc_attr_e( 'Premium WordPress Plugins and Themes', 'profit' ); ?>"><?php _e( 'MotoPress', 'profit' ); ?></a>
-						<?php printf( __( '&#8226; Proudly Powered by ', 'profit' ) ); ?><a
-						href="<?php echo esc_url( __( 'http://wordpress.org/', 'profit' ) ); ?>"  rel="nofollow"
-						title="<?php esc_attr_e( 'Semantic Personal Publishing Platform', 'profit' ); ?>"><?php _e( 'WordPress', 'profit' ); ?></a>
-					<?php else: ?>
-						<?php if ( ! empty( $mp_profit_copyright ) ): ?>
-							<?php echo $mp_profit_copyright; ?>
-						<?php endif; ?>
-						<?php
-					endif;
-					
-					?>
-				</p><!-- .copyright -->
+				<p class="copyright">
+                    <span class="copyright-date">&copy; Copyright <?php echo date('Y') ?></span>
+                    <a href="<?php echo get_site_url() ?>" title="Tíckalo">Tickalo</a>
+				</p>
 			</div>
 		</div>
 	</footer>
