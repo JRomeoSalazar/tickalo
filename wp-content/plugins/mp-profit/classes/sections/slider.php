@@ -123,7 +123,7 @@ class MP_Profit_Plugin_Slider_Section {
                     <div class="middle-cell">
                         <div class="container">
                             <?php echo $beforeContainer; ?>
-                            <?php the_title('<h1 class="slide-title">', '</h1>', true); ?>
+                            <?php the_title('<h2 class="slide-title">', '</h1>', true); ?>
                             <?php if ($content != ''): ?>
                                 <div class="slide-content">
                                     <?php echo $content; ?>
