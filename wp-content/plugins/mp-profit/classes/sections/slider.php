@@ -65,7 +65,7 @@ class MP_Profit_Plugin_Slider_Section {
      * Get slide 
      */
 
-    public function get_slide($post) {
+    public function get_slide($post, $i) {
         $thumb = wp_get_attachment_image_src(get_post_thumbnail_id($post->ID), '');
         $url = $thumb['0'];
         $thumbM = wp_get_attachment_image_src(get_post_thumbnail_id($post->ID), 'mp-profit-thumb-slide-medium');
@@ -123,7 +123,7 @@ class MP_Profit_Plugin_Slider_Section {
                     <div class="middle-cell">
                         <div class="container">
                             <?php echo $beforeContainer; ?>
-                            <?php the_title('<h2 class="slide-title">', '</h1>', true); ?>
+                            <?php the_title('<h' . $i . ' class="slide-title">', '</h1>', true); ?>
                             <?php if ($content != ''): ?>
                                 <div class="slide-content">
                                     <?php echo $content; ?>
@@ -173,9 +173,11 @@ class MP_Profit_Plugin_Slider_Section {
                         ?>
 
                         <?php
+                        $i = 1;
                         while ($slider->have_posts()) {
                             $slider->the_post();
-                            $this->get_slide($slider->post);
+                            $this->get_slide($slider->post, $i);
+                            $i++;
                         }
                         ?>
 
