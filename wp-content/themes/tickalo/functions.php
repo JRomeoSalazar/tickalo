@@ -254,7 +254,7 @@ function tickalo_seguridad_get_html() {
 				<?php
 				$args   = array(
 					'post_type'      => 'seguridad',
-					'posts_per_page' => 2
+					'posts_per_page' => 3
 				);
 				$prizes = new WP_Query( $args );
 				if ( $prizes->have_posts() ) {
@@ -264,12 +264,8 @@ function tickalo_seguridad_get_html() {
 							<?php
 							$i = 0;
 							while ( $prizes->have_posts() ) {
-								$prizes->the_post();
-								if ( $i == 2 ):
-									echo '<div class = "clearfix visible-lg-block visible-md-block visible-sm-block"></div >';
-								endif;
-								?>
-								<div class="service-box  col-xs-6 col-sm-6 col-md-6 col-lg-6">
+								$prizes->the_post(); ?>
+								<div class="service-box col-xs-4 col-sm-4 col-md-4 col-lg-4">
 									<a href="<?php the_permalink(); ?>" class="service-content">
 										<?php
 										if ( has_post_thumbnail() ) {
