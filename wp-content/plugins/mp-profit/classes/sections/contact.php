@@ -82,6 +82,15 @@ class MP_Profit_Plugin_Contact {
                 $message = stripslashes(trim($_POST['mymessage']));
             endif;
 	        /*
+			 * telephone
+			 */
+	        if (trim($_POST['myphone']) === ''):
+		        $phoneError = __('* Por favor, introduzca un número de teléfono.', 'mp-profit');
+		        $hasError = true;
+	        else:
+		        $phone = trim($_POST['myphone']);
+	        endif;
+	        /*
 			 * privacy policy
 			 */
 	        if ($_POST['privacy-policy'] != "on"):
@@ -103,7 +112,12 @@ class MP_Profit_Plugin_Contact {
                     if (empty($subject)):
                         $subject = __('From ', 'mp-profit') . $name;
                     endif;
-                    $body = __('Name: ', 'mp-profit') . $name . "\n\n" . __('Email: ', 'mp-profit') . $email . "\n\n" . __('Subject: ', 'mp-profit') . $subject . "\n\n" . __('Message: ', 'mp-profit') . $message;
+                    $body =
+                        __('Name: ', 'mp-profit') . $name . "\n\n" .
+                        __('Email: ', 'mp-profit') . $email . "\n\n" .
+                        __('Subject: ', 'mp-profit') . $subject . "\n\n" .
+                        __('Teléfono: ', 'mp-profit') . $phone . "\n\n" .
+                        __('Message: ', 'mp-profit') . $message;
                     $headers = __('From: ', 'mp-profit') . $name . ' <' . $emailTo . '>' . "\r\n" . __('Reply-To: ', 'mp-profit') . $email;
                     wp_mail($emailTo, $subject, $body, $headers);
                     $emailSent = true;
@@ -166,8 +180,8 @@ class MP_Profit_Plugin_Contact {
                         if (isset($messageError) && $messageError != '') :
                             echo '<div class="notification error"><p>' . esc_html($messageError) . '</p></div>';
                         endif;
-                        if (isset($privacyError) && $privacyError != '') :
-	                        echo '<div class="notification error"><p>' . esc_html($privacyError) . '</p></div>';
+                        if (isset($phoneError) && $phoneError != '') :
+	                        echo '<div class="notification error"><p>' . esc_html($phoneError) . '</p></div>';
                         endif;
                         if (isset($privacyError) && $privacyError != '') :
 	                        echo '<div class="notification error"><p>' . esc_html($captchaError) . '</p></div>';
@@ -183,7 +197,7 @@ class MP_Profit_Plugin_Contact {
                                         <input required="required" type="text" name="myname" placeholder="<?php _e('Your Name', 'mp-profit'); ?>" class="form-control input-box" value="<?php if (isset($_POST['myname'])) echo esc_attr($_POST['myname']); ?>">
                                     </div>
                                     <div class="form-group">
-                                        <input type="text" name="myphone" placeholder="Teléfono" class="form-control input-box" value="<?php if (isset($_POST['myphone'])) echo esc_attr($_POST['myphone']); ?>">
+                                        <input required="required" type="text" name="myphone" placeholder="Teléfono" class="form-control input-box" value="<?php if (isset($_POST['myphone'])) echo esc_attr($_POST['myphone']); ?>">
                                     </div>
                                     <div class="form-group">
                                         <input required="required" type="email" name="myemail" placeholder="<?php _e('Your Email', 'mp-profit'); ?>" class="form-control input-box" value="<?php if (isset($_POST['myemail'])) echo is_email($_POST['myemail']) ? $_POST['myemail'] : ""; ?>">
